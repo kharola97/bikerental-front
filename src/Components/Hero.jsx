@@ -1,4 +1,4 @@
-import bike from "../assets/bike.png"
+import bike from "../assets/bike2.jpg";
 
 export default function Hero() {
   return (
@@ -14,11 +14,17 @@ export default function Hero() {
             placeholder="Enter your location"
             className="border px-4 py-2 rounded w-full max-w-xs"
           />
-          <button className="bg-blue-600 text-white px-4 py-2 rounded">Explore Bikes</button>
+          <button className="bg-blue-600 text-white px-4 py-2 rounded">
+            Explore Bikes
+          </button>
         </div>
       </div>
-      <div className="flex justofy-center  items-center" >
-      <img src={bike} alt="Bike and Map" className="w-80 md:mt-0 max-h-fit rounded-xl" />
+      <div className="flex justofy-center  items-center">
+        <img
+          src={bike}
+          alt="Bike and Map"
+          className="w-200 md:mt-0 max-h-fit rounded-xl"
+        />
       </div>
     </section>
   );

@@ -8,8 +8,6 @@ export default function UserLanding() {
       <Navbar />
       <Hero />
       <HowItWorks />
-      
-
     </>
   );
 }
