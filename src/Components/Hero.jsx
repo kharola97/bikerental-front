@@ -1,4 +1,5 @@
 import bike from "../assets/bike2.jpg";
+import LocationSearch from "../Components/LocationSearch";
 
 export default function Hero() {
   return (
@@ -8,13 +9,9 @@ export default function Hero() {
         <p className="mb-6  text-gray-700">
           Discover and book rental bikes from local shops in your area.
         </p>
-        <div className="flex items-center justify-center p-4 gap-2">
-          <input
-            type="text"
-            placeholder="Enter your location"
-            className="border px-4 py-2 rounded w-full max-w-xs"
-          />
-          <button className="bg-blue-600 text-white px-4 py-2 rounded">
+        <div className="flex flex-col justify-center p-5 gap-3 w-100">
+          <LocationSearch />
+          <button className="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer">
             Explore Bikes
           </button>
         </div>
