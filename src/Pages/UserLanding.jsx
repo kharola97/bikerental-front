@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
+import NearByBikes from "../Components/ListBikes";
 import HowItWorks from "../Components/HowItWorks";
 
 export default function UserLanding() {
@@ -8,6 +9,7 @@ export default function UserLanding() {
       <Navbar />
       <Hero />
       <HowItWorks />
+      <NearByBikes />
     </>
   );
 }
