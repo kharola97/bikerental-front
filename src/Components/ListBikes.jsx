@@ -1,6 +1,7 @@
-import classic350Bike from "../assets/classic350.jpeg";
-import hunter350Bike from "../assets/hunter350.jpeg";
-import pulsar200Bike from "../assets/pulsar200.jpeg";
+import classic350Bike from "../assets/classic350.png";
+import hunter350Bike from "../assets/hunter350.png";
+import pulsar200Bike from "../assets/pulsar200.png";
+import { Button } from "antd";
 
 const bikesListing = [
   {
@@ -43,13 +44,39 @@ const bikesListing = [
 
 const ListBikes = ({ bikes }) => {
   return (
-    <div className="grid grid-cols-1 gap-4 w-full">
-      {bikes.map((bike, i) => (
-        <div key={i} className="border border-gray-300 bg-slate-50 p-6 rounded">
-          <h3 className="font-semibold text-lg">{bike.title}</h3>
-          <p className="text-gray-600">{bike.description}</p>
-        </div>
-      ))}
+    <div className="grid grid-cols-1 gap-3 w-full">
+      {bikes.map((bike, i) => {
+        return (
+          <div
+            key={i}
+            className="flex border border-gray-200 bg-slate-50/50 rounded overflow-hidden h-[115px]"
+          >
+            <div className="w-[30%] h-full flex items-center justify-center bg-slate-100/50">
+              <img
+                src={bike.image}
+                alt={bike.name}
+                className="max-h-[90%] max-w-[90%] object-contain"
+              />
+            </div>
+            <div className="w-[50%] h-full border-gray-300 flex justify-center flex-col">
+              <h3 className="font-semibold text-sm pb-2">{bike.title}</h3>
+              <p className="text-xs text-gray-700 pb-2">{bike.rating}</p>
+              <p className="text-xs text-gray-700 pb-2">{bike.brand}</p>
+            </div>
+            <div className="flex flex-col flex-1 p-4 items-center justify-center text-sm gap-3">
+              <p className="text-xs text-gray-1000 pb-2">
+                {bike.price_per_day}
+              </p>
+              <Button
+                type="button"
+                className="!bg-blue-500 !text-white hover:!bg-blue-600 transition-colors duration-200"
+              >
+                View Details
+              </Button>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

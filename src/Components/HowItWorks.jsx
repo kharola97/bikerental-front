@@ -27,18 +27,18 @@ const steps = [
 
 const DivComponent = ({ heading, data }) => {
   return (
-    <div className="pb-6">
+    <div className="pb-6 w-full">
       <h2 className="text-3xl font-bold mb-6 text-left">{heading}</h2>
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap gap-3">
         {data.map((item, i) => {
           const Icon = item.icon;
           return (
             <div
               key={i}
-              className="p-6 rounded shadow flex-1 min-w-[200px] max-w-sm"
+              className="p-6 rounded flex-1 min-w-[200px] max-w-sm bg-slate-50/50 border border-gray-200"
             >
               <Icon className="w-10 h-10 mx-auto mb-4 text-blue-500" />
-              <h3 className="font-semibold text-lg">{item.title}</h3>
+              <h3 className="font-semibold text-sm">{item.title}</h3>
               <p className="text-gray-600 mt-2">{item.description}</p>
             </div>
           );
