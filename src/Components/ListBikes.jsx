@@ -60,7 +60,10 @@ const ListBikes = ({ bikes }) => {
             </div>
             <div className="w-[50%] h-full border-gray-300 flex justify-center flex-col">
               <h3 className="font-semibold text-sm pb-2">{bike.title}</h3>
-              <p className="text-xs text-gray-700 pb-2">{bike.rating}</p>
+              <p className="text-xs text-gray-700 pb-2">
+                <span>Rating stars</span>
+                {bike.rating}
+              </p>
               <p className="text-xs text-gray-700 pb-2">{bike.brand}</p>
             </div>
             <div className="flex flex-col flex-1 p-4 items-center justify-center text-sm gap-3">
