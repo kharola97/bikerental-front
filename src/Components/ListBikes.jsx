@@ -119,7 +119,7 @@ export default function NearByBikes() {
   return (
     <section className="flex flex-col justify-center items-center p-6 w-4/5 mx-auto text-center">
       <div className="w-full">
-        <h2 className="text-3xl font-bold mb-6 text-left">
+        <h2 className="text-3xl font-bold mb-6 text-center">
           Nearby shops by bikes
         </h2>
       </div>

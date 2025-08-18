@@ -2,7 +2,7 @@ import partnerLogo from "../assets/partnerLogo.png";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="mt-10 border-t border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950">
+    <footer id="footer" className="mt-10 border-t border-gray-200 dark:border-slate-800 bg-blue-50 dark:bg-slate-950">
       <section className="flex justify-center items-center py-10">
         <div className="px-2 w-4/5 mx-auto flex flex-col md:flex-row items-center gap-6">
           <div className="md:w-1/2 p-4 flex flex-col justify-center">

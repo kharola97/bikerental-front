@@ -86,8 +86,8 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="w-4/5 mx-auto py-10">
       <div className="mb-6">
-        <h2 className="text-3xl font-bold text-left">What riders say</h2>
-        <p className="text-gray-600 text-left">Real reviews from recent rentals</p>
+        <h2 className="text-5xl font-bold text-center">What riders say</h2>
+        <p className="text-gray-600 mt-2 text-center">Real reviews from recent rentals</p>
       </div>
       <div className="space-y-4">
         <Row />

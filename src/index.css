@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 @import "tailwindcss";
 
 html, body, #root { height: 100%; }
 body {
-  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  background: linear-gradient(to bottom, #b8e6fe, #ffffff);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .dark body {
   background: linear-gradient(to bottom, #0f172a, #020617);
